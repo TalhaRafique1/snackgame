@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="score-container">
+                <div id="score-display">Score: 0</div>
+                <div id="high-score-display">High Score: 0</div>
+            </div>
+            <div class="mood-selector">
+                <button class="mood-btn classic active">Classic</button>
+                <button class="mood-btn neon">Neon</button>
+                <button class="mood-btn dark">Dark</button>
+            </div>
+        </div>
+        
+        <canvas id="game-board"></canvas>
+        
+        <div class="controls">
+            <button id="start-btn" class="control-btn">Start</button>
+            <button id="pause-btn" class="control-btn">Pause</button>
+        </div>
+
+        <div class="mobile-controls">
+            <div class="d-pad">
+                <button class="arrow up">↑</button>
+                <div class="row">
+                    <button class="arrow left">←</button>
+                    <button class="arrow down">↓</button>
+                    <button class="arrow right">→</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
